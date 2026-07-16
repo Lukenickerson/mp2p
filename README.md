@@ -1,7 +1,7 @@
 # mp2p - A Minimal P2P WebRTC Library 
 ***Communicate browser-to-browser without a signaling server, without dependencies***
 
-Based on: https://github.com/xem/miniWebRTC
+Try it out: https://lukenickerson.github.io/mp2p/ - Open two browser windows (one in incognito/private mode), and follow along the instructions on the page.
 
 ## How does it work?
 
@@ -11,10 +11,15 @@ Based on: https://github.com/xem/miniWebRTC
 
 * Peers need to communicate long strings of data in some way -- email, text, chat, etc. -- in order to make the connection. These strings contain the [SDP (SessionDescription Protocol)](https://developer.mozilla.org/en-US/docs/Glossary/SDP) information that describes the peer-to-peer connection.
 
-* After these long strings are traded back and forth, the peers are connected, and may trade data (chat, files, audio, video).
+* After these long strings are traded back and forth, the peers are connected, and may trade data (chat, files, audio, video). This example only shows chat.
 
 ## Goals
 
 * Be small -- so it can be easily read and understood, and also so it could be used in game jams such as js13k
 * No dependencies -- no external libraries
 * No signaling server or third-party server, other than the necessary STUN servers
+* A more approachable API -- just four verb functions: `offer`, `join`, `accept`, `send`
+
+## Credit
+
+Based on: https://github.com/xem/miniWebRTC
