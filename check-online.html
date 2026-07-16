@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script>
+      function check() {
+        document.getElementById("result").innerText = navigator.onLine ? 'ON line' : 'OFF line';
+      }
+    </script>
+  </head>
+<body>
+  <div id="result"></div>
+<button type="button" onclick="check();">Check navigator.onLine</button>
+</body>
+</html>
